@@ -1,0 +1,42 @@
+/* Job Listing Stylesheet */
+
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: hsl(180, 52%, 92%);
+}
+
+:root {
+    --priColor: hsl(180, 29%, 50%);
+    --lightCyan: hsl(180, 52%, 96%);
+    --lightCyanFilter: hsl(180, 31%, 95%);
+    --darkCyan: hsl(180, 8%, 52%);
+    --veryDarkCyan: hsl(180, 14%, 20%);
+}
+
+li {
+    list-style: none;
+}
+
+/* App - Header */
+#app-header {
+    background-color: var(--priColor);
+    width: 100%;
+}
+
+.job-Container {
+    /* outline: 1px solid red; */
+    background-color: white;
+    width: 90%;
+    margin: 2.5rem auto;
+    border-radius: 5px;
+}
+
+
