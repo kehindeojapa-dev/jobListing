@@ -5,12 +5,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: hsl(180, 52%, 92%);
+    position: relative;
 }
 
 :root {
@@ -25,18 +27,163 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+.remove-display {
+    display: none;
+}
+
+.outline {
+    outline: 1px solid orangered;
+}
+
+
 /* App - Header */
 #app-header {
     background-color: var(--priColor);
     width: 100%;
+    position: relative;
+    z-index: -1;
 }
 
 .job-Container {
     /* outline: 1px solid red; */
     background-color: white;
     width: 90%;
-    margin: 2.5rem auto;
+    margin: 2.5rem auto 3rem;
     border-radius: 5px;
+    box-shadow: -0px 20px 20px hsl(180, 52%, 82%);
+    /* padding-left: 10%; */
+    padding: 0 6% 1.5rem;
 }
 
+.job-Description {
+    /* outline: 1px solid brown; */
+    display: flex;
+    position: relative;
+}
+.job-Description .job-image {
+    position: absolute;
+    top: -2rem;
+    /* left: 1rem; */
+}
+.job-image img{
+    width: 70%;
+}
 
+.jobLeft {
+    margin-top: 2.4rem;
+}
+.jobLeft1st li {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.companyTitle {
+    font-weight: bold;
+    color: var(--priColor);
+}
+
+.new {
+    background-color: var(--priColor);
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    padding: 2px 7px;
+}
+.featured {
+    background-color: var(--veryDarkCyan);
+}
+.featureStyle {
+    border-left: 4px solid var(--priColor);
+}
+
+.jobLeft2nd h4{
+    margin: 0.4rem 0;
+    font-size: 1.05rem;
+    color: var(--veryDarkCyan);
+}
+
+.jobLeft2nd h2 {
+    font-size: 1rem;
+    color: var(--darkCyan);
+    font-weight: 400;
+}
+.jobLeft2nd span {
+    margin-right: 0.2rem;
+}
+
+.job-Keyword {
+    /* outline: 1px solid brown; */
+}
+.job-Keyword ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.job-Keyword li {
+    margin: 1rem 1rem 0rem 0rem;
+    font-size: 0.95rem;
+    padding: 3px 6px;
+    font-weight: bold;
+    background: var(--lightCyanFilter);
+}
+
+.job-Keyword li a {
+    color: var(--priColor);
+}
+
+.filter-Container {
+    background: white;
+    width: 70%;
+    margin: -1.5rem auto 4rem; 
+    /* right: 50%; */
+    left: 20%;
+    right: 20%;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.job-filter {
+    display: flex;
+}
+.job-filter ul {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.job-filter li {
+    position: relative;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: var(--priColor);
+    background-color: var(--lightCyan);
+    padding: 3px 30px 5px 5px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.job-filter li img{
+    pointer-events: none;
+}
+.job-filter li a {
+    background: var(--priColor);
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    padding: 3px 5px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.clear {
+    display: flex;
+    align-items: center;
+    color: var(--priColor);
+    font-weight: bold;
+    margin-left: 2rem;
+}
