@@ -1,6 +1,9 @@
 # Frontend Mentor - Job Listings Challenge
 
 ![Design preview for the Job Listings coding challenge](./design/desktop-preview.jpg)
+##  Coded by: Kehinde Ojapa
+###  [View Demo](https://kehindeojapa.com "Kenny's Job Listing").
+
 
 ## Welcome! 👋
 
