@@ -2,7 +2,7 @@
 
 ![Design preview for the Job Listings coding challenge](./design/desktop-preview.jpg)
 ##  Coded by: Kehinde Ojapa
-###  [View Demo](https://kehindeojapa.com "Kenny's Job Listing").
+###  [View Demo](https://kehindeojapa-dev.github.io/jobListing "Kenny's Job Listing").
 
 
 ## Welcome! 👋
